@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #8b3eea;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 900px;
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel {
+    flex: 1;
+    padding: 40px;
+    background-color: #e8e0ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left-panel h2 {
+    margin-bottom: 20px;
+    color: #4b0082;
+}
+
+.left-panel p {
+    margin-bottom: 20px;
+    color: #4b0082;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #4b0082;
+    transition: color 0.3s;
+    background: white;
+    border-radius: 19px;
+    padding: 10px;
+}
+
+.social-icons a:hover {
+    color: #8b3eea;
+    scale: 1.05;
+    transition: all 0.3s ease-in-out;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 40px;
+    background-color: #8b3eea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-panel h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+input:hover,textarea:hover{
+    scale: 1.05;
+    transition: all 0.3s ease-in-out;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #8b3eea;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #6c2cd7;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+    }
+}
